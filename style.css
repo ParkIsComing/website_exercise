@@ -1,0 +1,171 @@
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+    text-decoration: none;/*바로가기 할때 밑줄 자동으로 들어가던 거 사라짐*/
+    border-collapse: collapse;/*테이블에 다 각자 떨어져있던 거 합쳐주는*/
+    margin: 0px;
+    padding:0px;
+    color: #000;
+}
+
+h1{
+    font-size: 48px;
+    font-weight: 100;
+}
+
+.contents1{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.result{
+    font-size: 24px;
+}
+.contents1_bold{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contents3{
+    font-size: 14px;
+    font-weight: 100;
+}
+/*공통요소는 위에*/
+
+.intro_bg{/* css로 배경넣기*/
+    background-image: url("image/intro.png");
+    width: 100%;
+    height:718px;
+
+}
+.header{
+    display: flex; /*searchArea랑 nav 클래스가 옆으로 나란히 옴. 근데 리스트는 여전히 세로로*/
+    width:1280px;
+    margin: auto;
+    height: 86px;
+}
+.searchArea{
+    width: 300px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-top: 24px;
+
+}
+.searchArea > form > input{
+    border: none;
+    width: 250px;
+    height: 40px;
+    background:rgba(0, 0, 0, 0);
+    color: #fff;
+    padding-left: 10px;
+}
+.searchArea > form > span{
+    width:50px;
+    color: #fff;
+    font-weight: bold;
+    cursor:pointer;/*마우스 포인터가 닿으면 모양바뀌게*/
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;/*오른쪽으로 쫙 붙게. flex-start면 왼쪽으로 붙음*/
+    width: calc(1280px - 300px);
+    line-height: 86px;
+    
+}
+.nav > li{
+    margin-left: 84px;
+}
+.nav > li >a{
+    color:#fff;/*글씨 흰색으로*/
+}
+
+.intro_text{
+    width: 100%;
+    margin: 231px auto 231px auto;/*상, 우, 하, 좌 순서로 마진이 들어감*/
+    text-align: center;/*텍스트가 가운데로 오게*/
+}
+.intro_text > h1,
+.intro_text > h4{
+    color: #fff;
+
+}
+
+.numbers{
+    position: relative;
+    top: -66px;
+    width: 1280px;
+    background: #fff;
+    display: flex;
+    margin: auto;/*흰 배경박스가 가운데로 오게*/
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    /*좌우로 움직이는 픽셀, 위아래로 움직이는, 흐려지는 정도, 색*/
+}
+.numbers > li{
+    background: rgb(245, 246, 248);
+    flex: 1; /*dd가 네개가 균등하게 차지*/
+    height: 132px;
+}
+.numbers > li > div{
+    text-align: center;
+    height: 57px;
+    margin-top: 37px;
+}
+.numbers > li:not(:last-child) > div{/*리스트의 마지막 요소의 div만 제외하기 위해서*/
+    border-right: 1px solid rgb(201, 199, 199);
+}
+
+/*main_text0*/
+
+.main_text0{
+    width: 100%;
+    height: 601px;
+    background: rgb(226, 226, 226) ;
+    margin-top: -132px;/*아까 numbers부분을 66px만큼 올렸으니까*/
+}
+.main_text0 > h1{
+    padding-top: 116px;
+    text-align: center;
+
+}
+.main_text0 > .contents1 {
+    text-align: center;
+
+}
+
+.icons{
+    display: flex;
+    width:1280px;
+    height: 302px;
+    margin: auto;
+    
+}
+
+.icons > li {
+    flex: 1;
+    height: 302px;
+    background: white;
+    margin-top: 49px;
+    text-align: center;
+}
+.icons > li:not(:last-child){
+    margin-right: 20.6px;
+}
+.icons > li > .icon_img{
+    margin-top: 20px;
+}
+.icons .contents3{
+    padding-top: 4px;
+    width: 240px;
+    margin: auto;
+}
+.more{
+    width: 100px;
+    height: 30px;
+    background: blue;
+    color: white;
+    font-size: 12px;
+    line-height: 30px;/*글씨 높이*/
+    margin: 10px auto 20px auto ;
+}

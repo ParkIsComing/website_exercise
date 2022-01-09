@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+      <head></head>
+    <body>
+        <style>
+  
+        </style>
+<!doctype html>
+<html lang="ko">
+    <head></head>
+    <body>
+        <style>
+        img{
+            height: 300px;
+            width: 600px;
+            border:1px solid thistle;
+        }
+        li{
+            list-style: none;
+        }
+            .blockTag >div{
+                background:beige;
+                border: 1px solid black;
+            }
+
+            .inlineTag span{
+                background: cadetblue;
+                border: 1px solid burlywood;
+            } 
+            .colorBtn{
+                width: 100px;
+                height: 36px;
+                background-color: cornflowerblue;
+                color: white;/*글자색*/
+                text-align: center;
+                line-height: 36px;
+                cursor: pointer;
+                border-radius: 3px ;
+            }
+
+        </style>
+
+        <h1>제목</h1>
+        <h2>제목</h2>
+        <h6>제목</h6>
+
+        <form><!--form은 서버사이드, 데이터베이스 등에 데이터를 전송할 때-->
+            <ul>
+                <li><input type="text"></li>
+                <li><input type="submit"></li>
+                <li><!--radio랑 checkbox는 label로 묶어줘야-->
+                    <label><input type="radio" name="fruits" id="orange">오렌지</label>
+                    <label><input type="radio" name="fruits" id="apple">사과</label>
+                    <label><input type="radio" name="fruits" id="strawberry">딸기</label>
+                </li>
+                <li><!--radio랑 checkbox는 label로 묶어줘야-->
+                    <label><input type="checkbox" name="fruits" id="orange">오렌지</label>
+                    <label><input type="checkbox" name="fruits" id="apple">사과</label>
+                    <label><input type="checkbox" name="fruits" id="strawberry">딸기</label>
+                </li>
+                
+                <li><input type="button" value="버튼명은 이렇게"></li>
+                <li><input type="submit" value="저장하기"></li> 
+
+                <li><div class="colorBtn">버튼입니다</div></li>
+            </ul>
+            
+            
+
+
+        </form>
+
+        <ul><!--목록태그-->
+            <li>목록 1</li>
+            <li>목록 2</li>
+            <li>목록 3</li>
+        </ul>
+        <div class="blockTag">
+            <div>block 1</div>
+            <div>block 2</div>
+            <div>block 3</div>
+        </div> 
+
+        <div class="inlineTag">
+            <span>inline 1</span>
+            <span>inline 2</span>
+            <span>inline 3</span>
+        </div>
+        <a href="https://www.naver.com">네이버 바로가기</a>
+        <br> <!--  줄바꿈 -->
+        <img src="image/ice-bear.jpg">
+    </body>
+</html>
